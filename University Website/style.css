@@ -1,0 +1,230 @@
+/*applies to all pages*/
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+	/*black background*/
+	background-color: rgb(0,0,0);
+	/*white text*/
+	color: rgb(255, 255, 255);
+}
+/*applies to all elements with the row comment*/
+.row{
+    width: 100%;
+    max-width: 62rem;
+    margin: 0 auto;
+}
+/*applies to space/elements after element with row class*/
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*applies to all elements with column class*/
+.column {
+    float: left;
+    box-sizing: border-box;
+}
+/*all the following determine the width of an element on screen, 1 being the 
+smallest width and 12 the largest*/
+    .large-1{
+      width: 8.333%;
+    }
+    .large-2{
+      width: 16.666%;
+    }
+    .large-3{
+      width: 25%;
+    }
+    .large-4{
+      width: 33.333%;
+    }v
+    .large-5{
+      width: 41.666%;
+    }
+    .large-6{
+      width: 50%;
+    }
+    .large-7{
+      width: 58.333%;
+    }
+    .large-8{
+      width: 66.666%;
+    }
+    .large-9{
+      width: 75%;
+    }
+    .large-10{
+      width: 83.333%;
+    }
+    .large-11{
+      width: 91.666%;
+    }
+    .large-12{
+      width: 100%;
+    }
+/*removes bullet points and puts li's online with university name*/
+.page_nav li{
+	list-style-type: none;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-bottom: 2em;
+}
+/*makes the button black with white writing and makes them bigger*/
+.page_nav input{
+	background-color: rgb(0,0,0);
+	color: rgb(255,255,255);
+	padding: 1em;
+}
+/*changes cursor when is over the inputs(buttons)*/
+.page_nav input:hover{
+	cursor: pointer;
+	background-color: rgb(153, 0, 153);
+}
+/*space between banner and content*/
+#welcome_heading{
+	padding-top: 1em;
+}
+/*creates space between the paragraph and rest of content*/
+#home_text{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+/*images never exceedes the width of the page*/
+img{
+	max-width: 100%;
+}
+/*keeps footer in middle of the page*/
+footer{
+	padding-left: 20%;
+}
+/*puts the footer in the middle of the page on the department page*/
+footer#department{
+	padding-left: 30%;
+}
+/*keeps the input away from the banner and from the side of the page*/
+#name_input{
+	padding-top: 2em;
+	padding-left: 20%;
+}
+/*purple background on the banner*/
+header{
+	background-color: rgb(153,0,153);
+}
+/*keeps the logo away from the side*/
+.logo{
+	padding-left: 2em;
+}
+/*applies to the side navigation*/
+#side_nav{
+	/*keeps away from side*/
+	padding-left: 2.2em;
+	/*purple background color*/
+	background-color: rgb(153,0,153);
+}
+/*keeps the button on the department page inline*/
+#page_nav_department{
+	padding-left: 0.1em;
+}
+/*keeps the profiles away from the side nav on department page*/
+div.staff{
+	padding-left: 3em;
+	padding-right: 1em;
+	padding-top: 3em;
+}
+/*keeps profile text away from profile image*/
+.profile_pic{
+	padding-right: 2em;
+}
+/*if and element has this class then the content is not shown*/
+.no_show{
+	display: none;
+}
+/*if and element has this class then the content is shown*/
+.show{
+	display: inline;
+}
+/*makes element text purple and changes cursor on profile 'show' text*/
+.show_style:hover{
+	color: rgb(153,0,153);
+	cursor: pointer;
+}
+/*keeps content away from side nav bar*/
+#info_page{
+	padding-left: 1em;
+}
+/*size of side nav buttons and degrees page*/
+.degrees{
+	max-width: 10px;
+}
+/*size of the input boxes*/
+input{
+	width: 150px;
+	max-height: 150px;
+}
+/*keeps the comments section central*/
+.comment{
+	padding-left: 15.5em;
+}
+/*changes the text to purple and cursor when the cursor hovers over the show comments text*/
+.show_comments:hover{
+	cursor: pointer;
+	color: rgb(153,0,153);
+}
+/*changes the text to purple and cursor when the cursor hovers over the hide commentstext*/
+.hide_comments:hover{
+	cursor: pointer;
+	color: rgb(153,0,153);
+}
+/*keeps top nav bar central on department and degree pages*/
+.alternative{
+	padding-left: 10px;
+}
+/*keeps logo on department and degree page central*/
+.alternative_logo{
+	padding-left: 35%;
+}
+/*when a user hovers over the add comment button*/
+#add_comments:hover{
+	cursor: pointer;
+}
+/*when a user hovers over the delete comment text changes text purple*/
+.delete_comment:hover{
+	cursor: pointer;
+	color: rgb(153,0,153);
+}
+/*creates space between comment and previous comment*/
+.comment_space_top{
+	padding-top: 1em;
+}
+/*creates space between comment and next comment*/
+.comment_space_bottom{
+	padding-bottom: 1em;
+}
+.modules{
+	list-style-type: none;
+}
+/*when the user hovers over the module title*/
+.show_module:hover{
+	background-color: rgb(153,0,153);
+	cursor: pointer;
+	/*padding-bottom: 10px;
+	padding-top: 10px;*/
+}
+/*space between different module details*/
+.module_space{
+	padding-bottom: 2em;
+}
+/*close module text is purple*/
+.close_module{
+	color: rgb(153,0,153);
+}
+/*when user hovers mouse over the close module text*/
+.close_module:hover{
+	color: rgb(255,255,255);
+	background-color: rgb(153,0,153);
+	cursor: pointer;
+}
+/*keeps course info away from side nav*/
+#course_info{
+	padding-left: 1em;
+}

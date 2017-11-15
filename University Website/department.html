@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+	
+		<head>
+		
+			<title>The Department</title>
+			<link rel="stylesheet" href="style.css"/>
+			<script src="jquery.min.js"></script>
+			<script src="details.js"></script>
+			
+		</head>
+		
+		<body>
+			
+			<header class="row">
+				<!--website logo/title-->
+				<div class="alternative_logo column large-12">
+					
+					<h1>Edge Hill University</h1>
+				
+				</div>
+				<!--top navigation bar-->
+				<nav class="align_nav">
+				
+					<ul class="page_nav row">
+						<!--home page button-->
+						<li class="alternative column large-4">
+						
+							<form action="index.html" method="get">
+							
+								<input type="submit" value="Home"/>
+							
+							</form>
+							
+						</li>
+						<!--department page button-->
+						<li class="column large-4">
+							
+							<form action="department.html" method="get">
+								
+								<input type="submit" value="Department"/>
+								
+							</form>
+							
+						</li>
+						<!--degree page button -->
+						<li class="column large-4">
+							
+							<form action="degree.html" method="get">
+							
+								<input type="submit" value="Degree"/>
+							
+							</form>
+						</li>
+						
+					</ul>
+					
+				</nav>
+				
+			</header>
+			
+			<article class="row">
+				<!--navigation at the left side of the page-->
+				<nav class="column large-3" id="side_nav">
+				
+					<ul class="page_nav" id="page_nav_department">
+						<!--department information button-->
+						<li class="info column large-12">
+						
+							<form class="info" method="get">
+							
+								<input type="submit" value="Info"/>
+							
+							</form>
+							
+						</li>
+						<!--staff information button-->
+						<li class="staff column large-12">
+							
+							<form class="staff" method="get">
+								
+								<input type="submit" value="Staff"/>
+								
+							</form>
+							
+						</li>
+						
+					</ul>
+					
+				</nav>
+				<!--Information about the department, shown by default-->
+				<div id="info_page" class="info column large-9 show">
+					
+					<h2 id="department_heading">The Department</h2>
+					<!--image of the tech hub-->
+					<img alt="Tech Hub" id="department_tech_hub" src="./images/Edge-Hill-tech-hub-cave.jpg"/>
+					<p>
+					
+						The Edge Hill department of Computer Science is a diverse and vibrant
+						department that has staff specialising in many different fields within the computing
+						world.
+					
+					</p>
+					
+					<p>
+					
+						The new Tech Hub building offers great facilities boasting multiple computer labs, containing
+						i7 processor computers. Furthermore, there is a brand new virtual reality CAVE installed into the building
+						which allows for an immersive experience (useful for our games development programme). Everything a student would
+						need to complete their courses is provided in a single building which also houses all members
+						of the department.
+					
+					</p>
+				
+				</div>
+				<!--information about the staff, no shown by default-->
+				<div id="staff_page" class="staff column large-9 no_show">
+					<!--Nik bessis profile-->
+					<div class="row profiles show">
+						
+						<img  alt="Nik Bessis" class="profile_pic column large-3" src="./images/nik_bessis.jpg"/>
+						<!--profile info, not shown by default-->
+						<div class="no_show">
+						
+							<p class="column large-2">Head of Department</p>
+							<p class="column large-2">Room: THG09 Tech Hub</p>
+							<p class="column large-2">Contact: 01695 656348</p>
+						
+						</div>
+						<!--used to show and hide profile information-->
+						<p class=" open show column large-2 show_style">(show profile)</p>
+						<p class=" close no_show column large-2 show_style">(close profile)</p>
+						<!--profile name-->
+						<h2 class="column large-12">Nik Bessis</h2>
+						
+					
+					</div>
+					<!--Hui Fang profile-->
+					<div class="row profiles show">
+					
+						<img alt="Hui-Fang" class="profile_pic column large-3" src="./images/hui-fang.jpg"/>
+						<!--profile info, not shown by default-->
+						<div class="no_show">
+						
+							<p class="column large-2">Lecturer</p>
+							<p class="column large-2">Room: THG13 Tech Hub</p>
+							<p class="column large-2">Contact: 01695 653286</p>
+						
+						</div>
+						<!--used to show and hide profile information-->
+						<p class=" open show column large-2 show_style">(show profile)</p>
+						<p class=" close no_show column large-2 show_style">(close profile)</p>
+						<!--profile name-->
+						<h2 class="column large-12">Hui Fang</h2>
+						
+					
+					</div>
+					<!--Mark hall profile-->
+					<div class="row profiles show">
+					
+						<img alt="Mark Hall" class="profile_pic column large-3" src="./images/photo.jpg"/>
+						<!--profile info, not shown by default-->
+						<div class="no_show">
+						
+							<p class="column large-2">Senior Lecturer & Modeling Research Theme Leader</p>
+							<p class="column large-2">Room: THF10 Tech Hub</p>
+							<p class="column large-2">Contact: 01695 657653</p>
+						
+						</div>
+						<!--used to show and hide profile information-->
+						<p class=" open show column large-2 show_style">(show profile)</p>
+						<p class=" close no_show column large-2 show_style">(close profile)</p>
+						<!--profile name-->	
+						<h2 class="column large-12">Mark Hall</h2>
+						
+					
+					</div>
+					<!--collette profile-->
+					<div class="row profiles show">
+					
+						<img alt="Collette Gavan" class="profile_pic column large-3" src="./images/Collette.jpg"/>
+						<!--profile info, not shown by default-->
+						<div class="no_show">
+						
+							<p class="column large-2">Director of Undergaduate Studies</p>
+							<p class="column large-2">Senior Lecturer & Programme Leader for BSc(Hons) Computing</p>
+							<p class="column large-2">Room: THF11 Tech Hub</p>
+							<p class="column large-2">Contact: 01695 657633</p>
+						
+						</div>
+						<!--used to show and hide profile information-->
+						<p class=" open show column large-2 show_style">(show profile)</p>
+						<p class=" close no_show column large-1 show_style">(close profile)</p>
+						<!--profile name-->
+						<h2 class="column large-12">Collette Gavan</h2>
+						
+					
+					</div>
+					
+				</div>
+				
+			</article>
+			
+			<!--contact information and map of where edge hill university is-->
+			<footer class="row" id="department">
+				
+					
+				<div class="column large-4">
+				
+					<h3>Contact</h3>
+					<div>Edge Hill University</div>
+					<div>St Helens Road</div>
+					<div>Ormskirk</div>
+					<div>Lancashire</div>
+					<div>L39 4QP</div>
+					<div>United Kingdom</div>
+					<div>+44(0)1695 575171</div>
+					
+				</div>
+					
+				<div class="column large-4">
+					<img alt="map" src="./images/map.png"/>					
+				</div>
+				
+			</footer>
+			
+			
+		</body>
+	
+	</html>

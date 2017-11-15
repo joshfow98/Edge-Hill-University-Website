@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+	<html>
+	
+		<head>
+		
+			<title>Home Page</title>
+			<link rel="stylesheet" href="style.css"/>
+			<script src="jquery.min.js"></script>
+			<script src="degree.js"></script>
+		</head>
+		
+		<body>
+		
+			<header class="row">
+				
+				<div class="alternative_logo column large-12">
+					
+					<h1>Edge Hill University</h1>
+				
+				</div>
+				
+				<nav class="alternative">
+				
+					<ul class="page_nav row">
+						
+						<li href="index.html" class="column large-4">
+						
+							<form action="index.html" method="get">
+							
+								<input type="submit" value="Home"/>
+							
+							</form>
+							
+						</li>
+						
+						<li class="column large-4">
+							
+							<form action="department.html" method="get">
+								
+								<input type="submit" value="Department"/>
+								
+							</form>
+							
+						</li>
+						
+						<li class="column large-4">
+							
+							<form action="degree1.html" method="get">
+							
+								<input type="submit" value="Degree"/>
+							
+							</form>
+						</li>
+						
+					</ul>
+		
+				</nav>
+	  
+			</header>
+	
+			<article class="row">
+			
+				<nav class="column large-3" id="side_nav">
+				
+					<ul class="page_nav" id="page_nav_department">
+						
+						<li class="column large-12" id="degree_science">
+						
+							<form class="degrees info" method="get">
+							
+								<input type="submit" value="Computer Science"/>
+							
+							</form>
+							
+						</li>
+						
+						<li class="column large-12" id="degree_networking">
+							
+							<form class="degrees staff" method="get">
+								
+								<input type="submit" value="Staff"/>
+								
+							</form>
+							
+						</li>
+						
+						<li class="column large-12">
+						
+							<form class="degrees info" method="get">
+							
+								<input type="submit" value=""/>
+							
+							</form>
+							
+						</li>
+						
+						<li class="column large-12" id="degree_games">
+						
+							<form class="degrees info" method="get">
+							
+								<input type="submit" value="Games Programming"/>
+							
+							</form>
+							
+						</li>
+						
+						
+					</ul>
+					
+				</nav>
+				
+				<div class="column large-9 comment">
+				
+					<dl class="no_show">
+						
+					</dl>
+					
+					<form action="#" class="add_review">
+					
+						<label class="comments column large-12">Email
+							<input type="text" name="email"/>
+						</label>
+						
+						<label class="comments column large-12">Nickname
+							<input type="text" name="nickname"/>
+						</label>
+						
+						<label class="comments column large-12">Review 
+							<textarea name="comment" id="review_padding"></textarea>
+						</label>
+						
+						<input type="submit" value="Add comment">
+						
+						<p class="show show_comments">(show comments)</p>
+						<p class="no_show hide_comments">(hide comments)</p>
+						
+           			</form>
+				
+				</div>
+				
+			</article>
+			
+			
+			<footer class="row" id="department">
+				
+					
+				<div class="column large-4">
+				
+					<h3>Contact</h3>
+					<div>Edge Hill University</div>
+					<div>St Helens Road</div>
+					<div>Ormskirk</div>
+					<div>Lancashire</div>
+					<div>L39 4QP</div>
+					<div>United Kingdom</div>
+					<div>+44(0)1695 575171</div>
+					
+				</div>
+					
+				<div class="column large-4">
+					<img src="./images/map.png"/>					
+				</div>
+				
+			</footer>
+			
+		</body>
+	
+	</html>

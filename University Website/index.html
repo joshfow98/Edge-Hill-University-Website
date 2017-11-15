@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+	
+		<head>
+		
+			<title>Home Page</title>
+			<link rel="stylesheet" href="style.css"/>
+			<script src="jquery.min.js"></script>
+			
+		</head>
+		
+		<body>
+		
+			<header class="row">
+				<!--Website logo/title-->
+				<div class="column large-3 logo">
+					
+					<h1>Edge Hill University</h1>
+				
+				</div>
+				
+				<nav>
+					<!--navigation bar-->
+					<ul class="page_nav row">
+						<!--home page button-->
+						<li class="column large-3">
+						
+							<form action="index.html" method="get">
+							
+								<input type="submit" value="Home"/>
+							
+							</form>
+							
+						</li>
+						<!--department page button-->
+						<li class="column large-3">
+							
+							<form action="department.html" method="get">
+								
+								<input type="submit" value="Department"/>
+								
+							</form>
+							
+						</li>
+						<!--degree page button-->
+						<li class="column large-3">
+							
+							<form action="degree.html" method="get">
+							
+								<input type="submit" value="Degree"/>
+							
+							</form>
+						</li>
+						
+					</ul>
+		
+				</nav>
+	  
+			</header>
+	
+			<article>
+				
+				<section class="row">
+					<!--label, text box and button for user to enter their name-->
+					<form class="enter_name" id="name_input">
+				
+						<label class="large-4"> Enter your name:
+							<input type="text" name="your_name" class="large-4"/>
+						</label>
+					
+						<input id="button_pressed" type="submit" value="Enter" class="large-4"/>
+					
+					</form>
+					<!--takes the user input from the form above and adds it to the welcome title-->
+					<script>
+				
+					$('#button_pressed').on('click', function(event){
+					
+						event.preventDefault();
+						var name;
+						var output;
+						name = $('input[type=text]').val();
+						output = ('Welcome to the department of Computer Science ' + name + '!');
+						document.getElementById('welcome_heading').innerHTML = output;
+						
+						});
+					
+					</script>
+				
+				</section>
+				
+				<section>
+					<!--department heading-->
+					<h2 class="row" id="welcome_heading">Welcome to the department of Computer Science!</h2>
+					<!--department overview-->
+					<p class="row" id="home_text">
+					
+						Here at Edge Hill University, the department of Computer Science offers
+						a range of courses that suit all areas of the IT industry today; from networking,
+						to programming, to web design and development. Here you will be equipped with the skills and
+						experience needed to gain an excellent and stable graduate job, to create a long and successful career.
+					
+					</p>
+					
+				</section>
+				
+				<!--image of the tech hub-->
+				<section class="row">
+				
+					<img  src="./images/tech_hub.jpg" alt="Tech Hub" >
+      
+				</section>
+				
+			</article>
+			<!--contact information and map images of where the university is-->
+			<footer class="row">
+				
+				<div class="column large-4">
+					<h3>Contact</h3>
+					<div>Edge Hill University</div>
+					<div>St Helens Road</div>
+					<div>Ormskirk</div>
+					<div>Lancashire</div>
+					<div>L39 4QP</div>
+					<div>United Kingdom</div>
+					<div>+44(0)1695 575171</div>
+				</div>
+				<div class="column large-4"></div>
+				<div class="column large-4">
+					<img src="./images/map.png" alt="map"/>
+				</div>
+				
+				<div class="column large-4"></div>
+				
+	        </footer>
+		
+		</body>
+	
+	</html>
